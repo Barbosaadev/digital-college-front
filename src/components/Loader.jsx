@@ -1,8 +1,9 @@
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
-export const Loader = () => {
+export const Loader = ({ message = "Loading..." }) => {
   return (
-    <div className="bg-gray-800 bg-opacity-75 fixed w-screen h-screen">
-      <ArrowPathIcon className="h-6 w-6" />
+    <div className="flex items-center justify-center bg-white bg-opacity-90 fixed top-0 left-0 w-screen h-screen z-10">
+      <ArrowPathIcon className="h-6 w-6 text-gray-800 animate-spin mr-2" />
+      <p className="text-sm">{message}</p>
     </div>
   );
 };

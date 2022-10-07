@@ -34,7 +34,7 @@ export const CharacterViewContainer = () => {
   }, [data]);
 
   return (
-    <View>
+    <View showLoader={loading}>
       <CharacterHeadline {...character} />
     </View>
   );
