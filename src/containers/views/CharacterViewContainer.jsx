@@ -25,7 +25,7 @@ export const CharacterViewContainer = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
+  
   useEffect(() => {
     if (data.data?.results) {
       console.log(data.data.results);

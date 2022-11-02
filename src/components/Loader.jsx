@@ -7,3 +7,5 @@ export const Loader = ({ message = "Loading..." }) => {
     </div>
   );
 };
+
+// comment
