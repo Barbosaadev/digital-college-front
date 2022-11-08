@@ -1,13 +1,12 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignUp from "../../components/SignUp";
+import View from "../../components/View";
 
 const SignUpViewContainer = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SignUpViewContainer />} />
-      </Routes>
-    </BrowserRouter>
+    <View>
+      <SignUp />
+    </View>
   );
 };
 

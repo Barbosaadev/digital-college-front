@@ -1,4 +1,5 @@
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 export const Sidebar = ({ isOpen = false, onCloseSidebar }) => {
   return (
@@ -15,9 +16,9 @@ export const Sidebar = ({ isOpen = false, onCloseSidebar }) => {
       <div className="px-4">
         <ul>
           <li>
-            <a href="#" className="text-white">
+            <Link to="/" className="text-white">
               Meus favoritos
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

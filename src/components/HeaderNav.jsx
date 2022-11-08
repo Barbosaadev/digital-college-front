@@ -9,12 +9,12 @@ export const HeaderNav = () => {
         </Link>
       </li>
       <li>
-        <Link to="/Signin" className="text-white px-4">
+        <Link to="/signin" className="text-white px-4">
           Sign In
         </Link>
       </li>
       <li>
-        <Link to="/Signup" className="text-white px-4">
+        <Link to="/signup" className="text-white px-4">
           Sign Up
         </Link>
       </li>

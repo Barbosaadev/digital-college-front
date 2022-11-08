@@ -21,3 +21,5 @@ export const View = ({ children }) => {
     </div>
   );
 };
+
+export default View;
