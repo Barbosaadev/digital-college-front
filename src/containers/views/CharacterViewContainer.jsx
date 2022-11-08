@@ -25,7 +25,7 @@ export const CharacterViewContainer = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
+  
   useEffect(() => {
     if (data.data?.results) {
       console.log(data.data.results);
@@ -34,7 +34,7 @@ export const CharacterViewContainer = () => {
   }, [data]);
 
   return (
-    <View>
+    <View showLoader={loading}>
       <CharacterHeadline {...character} />
     </View>
   );

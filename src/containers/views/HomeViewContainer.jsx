@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { View } from "../../components/View";
 import { CharacterGrid } from "../../components/CharactedGrid";
+import { Loader } from "../../components/Loader";
 
 import { fetchApi } from "../../api";
 
@@ -33,7 +34,7 @@ export const HomeViewContainer = () => {
   }, [data]);
 
   return (
-    <View>
+    <View showLoader={loading}>
       <CharacterGrid characters={characters} showLoading={loading} />
     </View>
   );
